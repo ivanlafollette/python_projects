@@ -27,12 +27,11 @@ def escapeMaze(y,x):
     visited.add((y,x))
     
     if x < 0 or y < 0 or x >= widthM or y >= heightN:
-        
         return ("DONE",)
     
     for i in {(-1, 0, "UP"),(1, 0, "DOWN"),(0, 1, "RIGHT"),(0, -1, "LEFT")}:
         
-        if (not (y+i[0] >= 0 and y + i[0] < heightN and x+i[1] >= 0 and x+i[1] < widthM) or mazeVar[y+i[0]][x+i[1]] != "S"):
+        if (y+i[0] >= 0 and y + i[0] < heightN and x+i[1] >= 0 and x+i[1] < widthM and mazeVar[y+i[0]][x+i[1]] != "S"):
             possibleAnswer = escapeMaze(y+i[0], x+i[1])
             
             if possibleAnswer != False:
@@ -64,4 +63,3 @@ for i in range(len(t)):
         mazeTurtle.setheading(0)
         mazeTurtle.fd(15)
         time.sleep(1)
-    
