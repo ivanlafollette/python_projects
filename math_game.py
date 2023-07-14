@@ -8,7 +8,6 @@ multiples = int(input("Name your mulitples: "))
 print()
 
 right = 0
-counter = 1
 for counter in range(1, 11):
   
   answer = multiples * counter 
