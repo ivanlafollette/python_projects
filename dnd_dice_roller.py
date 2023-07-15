@@ -1,4 +1,4 @@
-# Day 23
+# Day 24
 # Need this for the radomizer. 
 import random
 
