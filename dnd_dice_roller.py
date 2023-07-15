@@ -1,5 +1,5 @@
 # Day 24
-# Need this for the radomizer. 
+# Need this for the randomizer. 
 import random
 
 print("-----------------")
