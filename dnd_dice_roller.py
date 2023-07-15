@@ -3,7 +3,7 @@
 import random
 
 print("-----------------")
-print(" DnD Dice Roller")
+print(" DnD Dice Roller ")
 print("-----------------")
 print()
 
