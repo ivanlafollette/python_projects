@@ -20,9 +20,7 @@ def play():
       return
     else:
       continue
-    
 while True:
-
   # Clear the screen.
   os.system("clear")
   print("🎵 MyPOD Music Player")
