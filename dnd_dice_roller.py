@@ -11,7 +11,7 @@ def dice_roller(desired_dice):
   # Creates the random number plus the number of times being rolled. 
   for i in range (manyTimes):
     my_number = random.randint(1, desired_dice)
-    print("Out of", desiredDice, "you rolled a", my_number)
+    print("Out of", desired_dice, "you rolled a", my_number)
 
 while True:
   choices = [4, 6, 8, 10, 12, 20]
