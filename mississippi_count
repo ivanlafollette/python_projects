@@ -1,0 +1,8 @@
+# Counts time
+import time
+
+for count in range(1, 6):
+    print(count, "Mississippi.")
+    time.sleep(1)
+    if count == 5:
+        print("Ready or not, here I come!")
