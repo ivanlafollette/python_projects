@@ -1,42 +1,43 @@
 """
 This module will calculate the number of seconds per minute, day, month, and year.
 """
+# I renamed the variables to include an underscore, so that's why the code may have issues later on. Added - 8/1/2023
 
 print("Tell me a year and I will extrapolate the number of seconds per year.")
 print()
-yearVAR = int(input("What year do you want to know about? "))
+year_VAR = int(input("What year do you want to know about? "))
 print()
 
 # The calculation for the seconds per minute.
-secondsVar = 60
-minutesVar = 60
-secsMinute = 60 * 60
-print("The number of seconds per minute:", secsMinute)
+seconds_var = 60
+minutes_var = 60
+secs_minute = 60 * 60
+print("The number of seconds per minute:", secs_minute)
 print()
 
 # The calculation for the seconds per hour.
-secsHour = secsMinute * 60
-print("The number of seconds per hour:", secsHour)
+secs_hour = secs_minute * 60
+print("The number of seconds per hour:", secs_hour)
 print()
 
 # And the seconds per day.
-dayHours = 24
-secsDay = secsHour * 24
-print("The number of seconds per day:", secsDay )
+day_hours = 24
+secs_day = secs_hour * 24
+print("The number of seconds per day:", secs_day )
 
 # Now, using the seconds per day for the month.
-secsMonth = secsDay * 31
+secs_month = secs_day * 31
 print()
-print("The seconds per month:", secsMonth)
+print("The seconds per month:", secs_month)
 
 print()
 
 # Calculate if a year is a leap year. Is it divisible by 4 or 100 or 400? if so, run the following code.
-if (yearVAR % 4 == 0 and yearVAR % 100 != 0) or yearVAR % 400 == 0:
-  leapYear = 366 * secsMonth
-  print("This is a leap year so it has 366 days in it. The number of seconds per year is", leapYear)
+if (year_VAR % 4 == 0 and year_VAR % 100 != 0) or year_VAR % 400 == 0:
+  leap_year = 366 * secs_month
+  print("This is a leap year so it has 366 days in it. The number of seconds per year is", leap_year)
   
 # If not, then run the following code. 
 else:
-  nonLeapYear = 365 * secsMonth
-  print("This is a non-leap year so it has 365 days in it. The number of seconds per year is", nonLeapYear)
+  non_leap_year = 365 * secs_month
+  print("This is a non-leap year so it has 365 days in it. The number of seconds per year is", non_leap_year)
