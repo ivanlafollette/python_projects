@@ -1,4 +1,3 @@
-
 # step 1
 # First, we create an empty list. 
 
@@ -33,7 +32,7 @@ print("Step 3:", beatles)
 # step 4
 print("Now, those guys left the band, so let's get rid of them.")
 remove_stu = input("Remove Stu Sutcliffe from the band. ")
-beatles.remote(remove_stu)
+beatles.remove(remove_stu)
 
 remove_stu = input("Remove Pete Best from the band. ")
 beatles.remove(remove_stu)
@@ -44,7 +43,9 @@ print("Step 4:", beatles)
 
 print("Now, we have to add the great Ringo to the band. ")
 add_ringo = input("Go ahead and add Ringo Starr: ")
-beatles.insert(add_ringo)
+
+# The first argument is the element location in the list. 
+beatles.insert(3, add_ringo)
 
 print("Step 5:", beatles)
 
