@@ -1,3 +1,5 @@
+# Asks for input from the user for an int. Either continue to input ints, or find the largest value. 
+
 my_list = []
 
 while True: 
