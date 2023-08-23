@@ -44,7 +44,6 @@ def word_game():
               print("The word so far:", guessed_word)
               guess_total += 1
               print("You have guessed", guess_total, "times.")
-            
           #Checks to see if the guessed letter is in P1's word. 
           elif guess in p1_word:
               print("Correct guess!")
@@ -55,12 +54,10 @@ def word_game():
               print("The word so far:", guessed_word)
               guess_total += 1
               print("You have guessed", guess_total, "times.")
-  
           elif guessed_word == p1_word:
             print("Congratulations! Player 1 wins!")
             print("Game over!")
             break
-              
           elif guess not in guessed_word:
               print("Wrong guess!")
               print("The word so far:", guessed_word)
