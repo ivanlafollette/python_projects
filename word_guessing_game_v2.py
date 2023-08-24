@@ -14,7 +14,6 @@ os.system("cls" if os.name == "nt" else "clear")
 input("Player 2, go away for a minute so player 1 can take their turn! Hit enter before you do!")
 os.system("clear")
 
-
 def word_game():
     
     p1_word = input("Player 1, enter your word: ").lower()
