@@ -53,6 +53,7 @@ def word_game():
               print("The word so far:", guessed_word)
               guess_total += 1
               print("You have guessed", guess_total, "times.")
+              
           elif guessed_word == p1_word:
             print("Congratulations! Player 1 wins!")
             print("Game over!")
