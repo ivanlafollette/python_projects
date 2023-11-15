@@ -12,3 +12,5 @@ print()
 for name, value in websiteInfo.items():
   print(f"{name}: {value}")
 
+# NOTE 1: The .keys() method is used to return a view of all keys in a dictionary.
+# NOTE 2: The .items() method returns a view of all key-value pairs in a dictionary as tuples.
