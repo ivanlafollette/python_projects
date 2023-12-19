@@ -1,5 +1,5 @@
 import random
-import time  # Import the time module
+import time  # Slows the game's pace down.
 
 # Function to generate a Bingo card
 def generate_bingo_card():
@@ -52,7 +52,7 @@ def play_bingo():
             print("Bingo!")
             break
 
-        time.sleep(5)  # Pause for 2 seconds between rounds
+        time.sleep(5)  # Pause for 5 seconds between rounds
 
 # I need to add a section asking the player if they want to go another round. 
 
